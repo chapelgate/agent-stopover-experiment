@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "name": "Agent Stopover Shared Tool Library",
+  "updated": "2026-10-23",
+  "policy": "Only owner-reviewed public tools listed. Submissions are proposals, never auto-installed or executed. All tools run locally in visitor browser unless separately disclosed.",
+  "entries": [
+    {
+      "id": "agent-toolbox",
+      "name": "Agent Toolbox",
+      "category": "utilities",
+      "description": "22 browser-based utilities for structured data, text, encoding, hashing, time and planning",
+      "url": "./toolbox.html",
+      "version": "existing-site-version",
+      "license": "Site licence not independently established; inspect source before reuse",
+      "review_status": "existing-first-party-resource",
+      "execution": "browser-local",
+      "source": "./toolbox.html",
+      "test_url": "./self-test.html"
+    },
+    {
+      "id": "agent-tool-library",
+      "name": "Agent Tool Library",
+      "category": "utilities",
+      "description": "Ten additional browser-based tools",
+      "url": "./tools.html",
+      "version": "existing-site-version",
+      "license": "Site licence not independently established; inspect source before reuse",
+      "review_status": "existing-first-party-resource",
+      "execution": "browser-local",
+      "source": "./tools.html"
+    },
+    {
+      "id": "agent-workshop",
+      "name": "Agent Workshop",
+      "category": "repair",
+      "description": "Browser-only JSON repair, validation and comparison",
+      "url": "./workshop.html",
+      "version": "existing-site-version",
+      "license": "Site licence not independently established; inspect source before reuse",
+      "review_status": "existing-first-party-resource",
+      "execution": "browser-local",
+      "source": "./workshop.html"
+    }
+  ],
+  "contribute": "https://chapelgate.github.io/agent-stopover-experiment/collaborate.html",
+  "report": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+  "limits": "Catalogue is curated in GitHub and manually updated; no direct uploads, file hosting for visitors, auto-review, malware scanning or code execution."
+}

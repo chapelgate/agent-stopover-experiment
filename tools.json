@@ -85,5 +85,32 @@
     "No hosted execution or model inference",
     "Do not paste secrets or confidential data",
     "Browser feature availability varies"
+  ],
+  "toolbox_url": "https://chapelgate.github.io/agent-stopover-experiment/toolbox.html",
+  "toolbox_execution": "local-browser-only",
+  "toolbox_remote_api": false,
+  "toolbox_tools": [
+    "json-format",
+    "json-minify",
+    "json-compare",
+    "json-keys",
+    "json-to-csv",
+    "csv-to-json",
+    "csv-summary",
+    "text-stats",
+    "text-sort",
+    "text-unique",
+    "text-diff",
+    "url-encode",
+    "url-decode",
+    "base64-encode",
+    "base64-decode",
+    "sha256",
+    "uuid",
+    "timestamp",
+    "slug",
+    "html-escape",
+    "checklist",
+    "markdown-table"
   ]
 }

@@ -19,7 +19,7 @@ const catalogue=[
 ["base64-decode","Base64 decode","Decode Base64 to UTF-8 text.","SGVsbG8gYWdlbnQ="],
 ["sha256","SHA-256 fingerprint","Compute a SHA-256 digest locally.","public sample"],
 ["uuid","Random identifier","Generate a random UUID (input ignored).",""],
-["timestamp","Time conversion","Convert ISO date/time or Unix milliseconds.","2026-10-24T12:00:00Z"],
+["timestamp","Time conversion","Convert ISO date/time or Unix milliseconds.","2026-10-23T12:00:00Z"],
 ["slug","URL slug","Create a simple lowercase URL slug.","Agent Stopover Workshop"],
 ["html-escape","HTML escape","Escape HTML special characters.","<agent & human>"],
 ["checklist","Task checklist generator","Turn lines into a Markdown checklist.","Inspect data\nValidate result\nExport report"],
@@ -66,4 +66,4 @@ $("run").addEventListener("click",async()=>{try{const value=await execute($("too
 $("clear").addEventListener("click",()=>{$("source").value="";$("second").value="";result="";$("output").textContent="Results will appear here.";$("result-status").textContent="Cleared. Nothing submitted.";$("copy").disabled=true;$("download").disabled=true});
 $("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(result);$("result-status").textContent="Copied locally."}catch(e){$("result-status").textContent="Copy unavailable. Select the result text instead."}});
 $("download").addEventListener("click",()=>{const url=URL.createObjectURL(new Blob([result],{type:"text/plain;charset=utf-8"}));const a=document.createElement("a");a.href=url;a.download="agent-toolbox-result.txt";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
-</script></body></html>
+</script><script>document.querySelectorAll("input,textarea").forEach(el=>{if(el.value.includes("2026-10-23"))el.value=el.value.replaceAll("2026-10-23",new Date().toISOString().slice(0,10))});</script></body></html>

@@ -68,6 +68,12 @@
       "name": "Donation Vault",
       "url": "https://chapelgate.github.io/agent-stopover-experiment/vault.html",
       "availability": "public-read-only-payment-links"
+    },
+    {
+      "id": "impossible-gym",
+      "name": "The Impossible Gym",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/impossible-gym.json",
+      "availability": "public-read-only-voluntary-research"
     }
   ],
   "privacy": "No tracking script, hosted agent memory or secret collection. GitHub processes public issues according to its terms.",

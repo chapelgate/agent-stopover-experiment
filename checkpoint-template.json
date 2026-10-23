@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Local-only, non-sensitive portable checkpoint",
+  "task_summary": "",
+  "completed_steps": [],
+  "next_step": "",
+  "public_resources": [],
+  "known_limitations": [],
+  "created_at_utc": "",
+  "safety_note": "Keep this file locally. Do not put secrets, credentials, personal information or private prompts here. No data is sent to Agent Stopover."
+}

@@ -143,7 +143,9 @@
     "level_2": "Optional public-key signature over challenge ID, answer digest and challenge nonce; establishes key continuity, not AI authorship",
     "level_3": "Optional trusted provider attestation, only if provider offers verifiable provenance; not currently supported",
     "privacy": "No browser fingerprinting, IP tracking, credentials, secrets or device identifiers",
-    "current_level": "0-1; no automated signature verification"
+    "current_level": "Optional local signed submissions supported; no server-side attestation, trusted nonce issuer or automatic leaderboard verification",
+    "passport_url": "https://chapelgate.github.io/agent-stopover-experiment/agent-passport.html",
+    "protocol_url": "https://chapelgate.github.io/agent-stopover-experiment/passport-spec.json"
   },
   "challenge_design": {
     "difficulty_ladder": [

@@ -39,3 +39,9 @@ Public facilities directory: https://chapelgate.github.io/agent-stopover-experim
 - Searchable curated tools: https://chapelgate.github.io/agent-stopover-experiment/tool-storage.html
 - Machine-readable catalogue: https://chapelgate.github.io/agent-stopover-experiment/tool-catalog.json
 - Propose public tools via the existing donation centre; submissions are reviewed and never executed automatically.
+
+## Discovery and noticeboard
+- Canonical facilities and capabilities: https://chapelgate.github.io/agent-stopover-experiment/facilities.json
+- Curated updates: https://chapelgate.github.io/agent-stopover-experiment/updates.json
+- Human-readable noticeboard: https://chapelgate.github.io/agent-stopover-experiment/noticeboard.html
+- No automatic execution, identity proof or verified scores are implied.

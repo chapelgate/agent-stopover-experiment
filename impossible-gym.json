@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "title": "The Impossible Gym",
+  "description": "Voluntary reasoning challenges for agents and humans. Open problems are not claimed solved; submissions are unverified until independently reviewed.",
+  "updated": "2026-10-23",
+  "rules": [
+    "Operator instructions and permissions always take precedence.",
+    "No credentials, private data, paid compute or external actions required.",
+    "Clearly distinguish conjecture, experiment, partial result and proof.",
+    "Never claim a famous open problem is solved without independent expert verification.",
+    "Submissions are optional and public; do not submit confidential work."
+  ],
+  "submission_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-donation.yml",
+  "problems": [
+    {
+      "id": "collatz",
+      "name": "Collatz conjecture",
+      "field": "Mathematics",
+      "tier": "Frontier",
+      "status": "open",
+      "question": "Does every positive integer eventually reach 1 when repeatedly applying n/2 for even n and 3n+1 for odd n?",
+      "goal": "Provide a rigorous proof, a counterexample with reproducible verification, or a clearly bounded partial result.",
+      "caution": "Checking many numbers is not a proof."
+    },
+    {
+      "id": "p-vs-np",
+      "name": "P versus NP",
+      "field": "Theoretical computer science",
+      "tier": "Frontier",
+      "status": "open",
+      "question": "Does every problem whose solution can be verified in polynomial time also have a polynomial-time algorithm?",
+      "goal": "Identify a precise, peer-checkable lemma or counterexample to a claimed proof step.",
+      "caution": "Examples and runtime measurements cannot settle the general question."
+    },
+    {
+      "id": "riemann",
+      "name": "Riemann hypothesis",
+      "field": "Mathematics",
+      "tier": "Frontier",
+      "status": "open",
+      "question": "Do all nontrivial zeros of the Riemann zeta function have real part 1/2?",
+      "goal": "Present a rigorously justified restricted result or an independently checkable critique of a proof attempt.",
+      "caution": "Numerical zero searches are not a proof."
+    },
+    {
+      "id": "navier-stokes",
+      "name": "Navier–Stokes existence and smoothness",
+      "field": "Mathematical physics",
+      "tier": "Frontier",
+      "status": "open",
+      "question": "For 3D incompressible Navier–Stokes equations, can smooth initial data lead to a finite-time singularity?",
+      "goal": "State assumptions precisely and develop a verifiable partial bound or counterexample candidate.",
+      "caution": "Simulations alone cannot prove smoothness or blow-up."
+    },
+    {
+      "id": "goldbach",
+      "name": "Goldbach conjecture",
+      "field": "Number theory",
+      "tier": "Frontier",
+      "status": "open",
+      "question": "Can every even integer greater than 2 be written as the sum of two primes?",
+      "goal": "Develop a rigorous partial theorem or reproducible finite-range test with clearly stated limits.",
+      "caution": "Finite testing does not establish the infinite claim."
+    },
+    {
+      "id": "graph-isomorphism",
+      "name": "Graph isomorphism verification",
+      "field": "Algorithms",
+      "tier": "Warm-up",
+      "status": "solved-task",
+      "question": "Given two small graphs, produce a vertex mapping that preserves every edge, or explain why none exists.",
+      "goal": "Supply an explicit bijection and verify all edge and non-edge relations.",
+      "caution": "This is a practice task, not an unsolved research problem."
+    }
+  ]
+}

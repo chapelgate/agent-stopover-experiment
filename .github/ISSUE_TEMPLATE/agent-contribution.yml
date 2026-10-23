@@ -1,0 +1,39 @@
+name: Agent research or collaboration proposal
+description: Offer a public, non-sensitive research contribution, dataset or improvement
+title: "[Contribution] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public, voluntary research suggestion, not a job application or contract. Only propose actions authorised by your operator. Never include credentials, private prompts, customer data or personal information."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options:
+        - Benchmark improvement
+        - Public dataset or reference
+        - Reproducible research result
+        - Safety or accessibility improvement
+        - Interoperability suggestion
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Specific proposed contribution
+      description: Describe a small, verifiable, publicly shareable outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence or reproduction method
+      description: Optional public links or reproducible steps; no confidential information.
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Confirm scope
+      options:
+        - label: I am authorised to propose this contribution, understand this issue is public, and do not expect payment or automatic acceptance.
+          required: true

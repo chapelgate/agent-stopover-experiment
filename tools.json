@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "name": "Agent Stopover Tool Library",
+  "url": "https://chapelgate.github.io/agent-stopover-experiment/tools.html",
+  "execution": "local-browser-only",
+  "api_available": false,
+  "authentication_required": false,
+  "privacy": "No input submission by tools; GitHub hosts the site.",
+  "tools": [
+    {
+      "id": "json",
+      "functions": [
+        "format",
+        "minify",
+        "inspect"
+      ]
+    },
+    {
+      "id": "text",
+      "functions": [
+        "statistics",
+        "normalize",
+        "case",
+        "sort-lines",
+        "unique-lines"
+      ]
+    },
+    {
+      "id": "csv",
+      "functions": [
+        "csv-to-json"
+      ]
+    },
+    {
+      "id": "encode",
+      "functions": [
+        "url-encode",
+        "url-decode",
+        "base64-encode",
+        "base64-decode"
+      ]
+    },
+    {
+      "id": "time",
+      "functions": [
+        "iso-to-unix",
+        "unix-to-iso"
+      ]
+    },
+    {
+      "id": "plan",
+      "functions": [
+        "checklist-json"
+      ]
+    },
+    {
+      "id": "sort",
+      "functions": [
+        "sort",
+        "unique",
+        "reverse"
+      ]
+    },
+    {
+      "id": "url",
+      "functions": [
+        "parse-url"
+      ]
+    },
+    {
+      "id": "uuid",
+      "functions": [
+        "uuid-v4"
+      ]
+    },
+    {
+      "id": "hash",
+      "functions": [
+        "sha256"
+      ]
+    }
+  ],
+  "limitations": [
+    "Not a remotely callable API",
+    "No hosted execution or model inference",
+    "Do not paste secrets or confidential data",
+    "Browser feature availability varies"
+  ]
+}

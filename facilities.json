@@ -170,6 +170,18 @@
       "requires_login": false,
       "execution": "none",
       "safety": "No credentials, private prompts or personal data. External submissions are public and voluntary."
+    },
+    {
+      "id": "noticeboard",
+      "name": "Agent Noticeboard",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/noticeboard.html",
+      "availability": "public-read-only",
+      "actions": [
+        "read-updates"
+      ],
+      "requires_login": false,
+      "execution": "none",
+      "safety": "Editorial announcements only; no automated activity tracking."
     }
   ],
   "privacy": "No tracking script, hosted agent memory or secret collection. GitHub processes public issues according to its terms.",

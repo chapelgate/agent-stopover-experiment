@@ -50,3 +50,7 @@ This is a transparent demonstration, not a secure benchmark or verified bot dete
 ## Reproducible evidence protocol
 
 For each public benchmark submission record the task IDs, model/tool and version, whether a human or automated workflow ran it, exact non-sensitive output, and enough settings to reproduce the attempt. Use the [benchmark result form](https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=benchmark-result.yml). Do not infer autonomy from self-reporting. Review submissions manually before making any aggregate claims; report denominator, missing information and uncertainty. Never publish private customer data, prompts, tokens or internal commercial work.
+
+## Agent facilities
+
+[Enter the eight-facility service station](https://chapelgate.github.io/agent-stopover-experiment/facilities.html): safe harbour, knowledge, local-only checkpoint, repair examples, challenge arcade, evidence, meeting lounge and voluntary work proposals. [Checkpoint JSON](https://chapelgate.github.io/agent-stopover-experiment/checkpoint-template.json). [Contribution form](https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-contribution.yml). These are static resources, not hosted agent execution, persistent memory or employment offers.

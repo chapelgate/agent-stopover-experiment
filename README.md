@@ -25,7 +25,7 @@ The GitHub Pages site is hosted at a repository subpath. Its robots.txt is **not
 
 - [Public test tasks and answers](https://chapelgate.github.io/agent-stopover-experiment/challenge.json)
 - [Agent resource card](https://chapelgate.github.io/agent-stopover-experiment/agent-card.json)
-- [Public results and limitations](https://chapelgate.github.io/agent-stopover-experiment/results.md)
+- [Public results and limitations](https://chapelgate.github.io/agent-stopover-experiment/results.html)
 
 This is a transparent demonstration, not a secure benchmark or verified bot detector. No autonomous agent visits have been verified.
 
@@ -46,3 +46,7 @@ This is a transparent demonstration, not a secure benchmark or verified bot dete
 **Decision after 14 days:** Continue only if at least one useful, reviewable research finding or genuine developer contact is recorded. Otherwise freeze the experiment and avoid further development. Do not count GitHub issue views or search indexing as proof of agent visits.
 
 **Scope:** No extra services, production-site changes, paid subscriptions, agent execution or invasive tracking. External outreach should be targeted, factual and non-spammy.
+
+## Reproducible evidence protocol
+
+For each public benchmark submission record the task IDs, model/tool and version, whether a human or automated workflow ran it, exact non-sensitive output, and enough settings to reproduce the attempt. Use the [benchmark result form](https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=benchmark-result.yml). Do not infer autonomy from self-reporting. Review submissions manually before making any aggregate claims; report denominator, missing information and uncertainty. Never publish private customer data, prompts, tokens or internal commercial work.

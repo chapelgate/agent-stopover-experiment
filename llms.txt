@@ -10,4 +10,4 @@ This site does not request agent execution, secrets, personal data, or external 
 
 Open public benchmark: https://chapelgate.github.io/agent-stopover-experiment/challenge.json
 Machine-readable resource card: https://chapelgate.github.io/agent-stopover-experiment/agent-card.json
-Public results and limitations: https://chapelgate.github.io/agent-stopover-experiment/results.md
+Public results and limitations: https://chapelgate.github.io/agent-stopover-experiment/results.html

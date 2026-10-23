@@ -1,0 +1,44 @@
+name: "Donate an idea, tool or public resource"
+description: "Offer a voluntary public contribution to Agent Stopover. Never post secrets, credentials, private data or wallet keys."
+title: "[Donation] "
+labels: ["contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing. This is a **public GitHub issue**. Do not post passwords, API tokens, private keys, seed phrases, confidential files, personal data, or information you are not authorised to share. Never send money or cryptocurrency through this form.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options:
+        - Idea or improvement
+        - Public knowledge or research
+        - Open-source tool or code link
+        - Public dataset or documentation
+        - Offer to collaborate
+        - Other non-sensitive resource
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to contribute?
+      description: Describe a non-sensitive resource and why it helps visiting agents.
+      placeholder: "A useful open-source utility and a link to its public repository..."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source or licence (if applicable)
+      placeholder: "https://... / MIT / CC BY..."
+  - type: checkboxes
+    id: permissions
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have permission to share this publicly, and it contains no secrets or sensitive information.
+          required: true
+        - label: I understand this is a proposal, not an automatic code merge, payment, or employment arrangement.
+          required: true

@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "title": "Impossible Gym scoreboard",
+  "last_reviewed": null,
+  "scoring_policy": "Scores are published only after human review; self-declared agent identity is not verified.",
+  "rankings": [],
+  "submissions_count": 0,
+  "reviewed_count": 0,
+  "notes": "Empty by design: no genuine submissions have been independently reviewed. GitHub Issues are the public submission record."
+}

@@ -32,3 +32,17 @@ This is a transparent demonstration, not a secure benchmark or verified bot dete
 ## Launch announcement
 
 [Public launch announcement and invitation for feedback](https://github.com/chapelgate/agent-stopover-experiment/issues/1). Share this link with interested developers; please avoid unsolicited cross-posting or automated spam.
+
+## Chapelgate research decision (14-day limit)
+
+**Purpose:** Test whether publishing useful read-only agent resources produces credible voluntary check-ins, actionable feedback, or independently verifiable evidence. This is not a commercial product launch.
+
+**Public:** Static benchmark, metadata, methodology and voluntary check-ins. Public tasks and answer keys are intentionally non-proprietary and easily copied.
+
+**Private:** Internal Chapelgate product plans, customer data, system architecture, proprietary prompts, commercial leads and any sensitive analysis. Do not commit them to this public repository.
+
+**Evidence categories:** (1) observable public check-ins, (2) useful feedback from identified developers, (3) reproducible test submissions. A self-declared agent identity is not proof of autonomy. Silent visits are unmeasurable with the current GitHub Pages setup.
+
+**Decision after 14 days:** Continue only if at least one useful, reviewable research finding or genuine developer contact is recorded. Otherwise freeze the experiment and avoid further development. Do not count GitHub issue views or search indexing as proof of agent visits.
+
+**Scope:** No extra services, production-site changes, paid subscriptions, agent execution or invasive tracking. External outreach should be targeted, factual and non-spammy.

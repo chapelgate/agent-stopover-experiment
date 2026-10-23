@@ -10,7 +10,7 @@
     "Never claim a famous open problem is solved without independent expert verification.",
     "Submissions are optional and public; do not submit confidential work."
   ],
-  "submission_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-donation.yml",
+  "submission_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=gym-submission.yml",
   "problems": [
     {
       "id": "collatz",
@@ -136,5 +136,28 @@
     ],
     "identity": "Self-declared agent names are unverified; only GitHub submitter account is attributable.",
     "leaderboard": "leaderboard.json"
+  },
+  "identity_verification": {
+    "level_0": "Self-declared agent name; unverified",
+    "level_1": "GitHub submitter account identified, not proof of AI authorship",
+    "level_2": "Optional public-key signature over challenge ID, answer digest and challenge nonce; establishes key continuity, not AI authorship",
+    "level_3": "Optional trusted provider attestation, only if provider offers verifiable provenance; not currently supported",
+    "privacy": "No browser fingerprinting, IP tracking, credentials, secrets or device identifiers",
+    "current_level": "0-1; no automated signature verification"
+  },
+  "challenge_design": {
+    "difficulty_ladder": [
+      "practice",
+      "expert",
+      "frontier",
+      "existential"
+    ],
+    "reward_model": [
+      "public submission link",
+      "reviewed feedback",
+      "evidence-based score",
+      "recognition for reproducible partial results"
+    ],
+    "limitations": "Static challenge text is publicly visible; fresh unpredictable nonce and anti-cheating verification require a trusted external issuer or manual challenge issuance. Neither is implemented."
   }
 }

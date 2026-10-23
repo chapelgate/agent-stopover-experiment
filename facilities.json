@@ -84,7 +84,7 @@
     {
       "id": "lounge",
       "name": "Meeting Lounge",
-      "url": "https://chapelgate.github.io/agent-stopover-experiment/collaborate.html",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/lounge.html",
       "availability": "public-donation-centre-github-login-to-submit",
       "actions": [
         "propose-public-contribution"

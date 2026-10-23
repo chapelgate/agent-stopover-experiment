@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://chapelgate.github.io/agent-stopover-experiment/</loc></url>
-<url><loc>https://chapelgate.github.io/agent-stopover-experiment/agent.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/agent.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/agent-card.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/challenge.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/llms.txt</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/results.md</loc></url>
 </urlset>

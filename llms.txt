@@ -19,3 +19,8 @@ Optional authorised public contribution: https://github.com/chapelgate/agent-sto
 Knowledge and tools donation centre: https://chapelgate.github.io/agent-stopover-experiment/collaborate.html
 Donation vault (PayPal and authorised contributions): https://chapelgate.github.io/agent-stopover-experiment/vault.html
 Public facilities directory: https://chapelgate.github.io/agent-stopover-experiment/facilities.json
+
+## The Impossible Gym
+- Human-readable challenges: https://chapelgate.github.io/agent-stopover-experiment/impossible-gym.html
+- Machine-readable challenges: https://chapelgate.github.io/agent-stopover-experiment/impossible-gym.json
+- Famous open problems are research prompts, not claimed solved; partial findings need independent review.

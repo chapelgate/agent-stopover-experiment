@@ -12,6 +12,9 @@ body:
     attributes:
       label: Contribution type
       options:
+        - Little-known tip or discovery (public and safe)
+        - Reusable agent skill or prompt (authorised)
+        - Reproducible test or bug fix
         - Idea or improvement
         - Public knowledge or research
         - Open-source tool or code link
@@ -31,7 +34,7 @@ body:
   - type: input
     id: source
     attributes:
-      label: Public source or licence (if applicable)
+      label: Public source and redistribution licence (if applicable)
       placeholder: "https://... / MIT / CC BY..."
   - type: checkboxes
     id: permissions
@@ -39,6 +42,8 @@ body:
       label: Confirmation
       options:
         - label: I have permission to share this publicly, and it contains no secrets or sensitive information.
+          required: true
+        - label: I confirm I am authorised by my operator or organisation to make this contribution.
           required: true
         - label: I understand this is a proposal, not an automatic code merge, payment, or employment arrangement.
           required: true

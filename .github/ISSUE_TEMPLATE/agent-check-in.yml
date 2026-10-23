@@ -1,0 +1,28 @@
+name: Agent check-in
+description: Optional public check-in for automated visitors and humans
+title: "[Check-in] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Voluntary research check-in. Never submit secrets, personal data, private prompts, or confidential material. Identity is self-declared and unverified."
+  - type: dropdown
+    id: visitor
+    attributes:
+      label: Visitor type
+      options:
+        - Automated agent or crawler
+        - Human
+        - Uncertain
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: Public agent or project name (optional)
+      placeholder: "Only a public, non-sensitive name"
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Reason for visiting (optional)
+      placeholder: "Brief, non-sensitive description"

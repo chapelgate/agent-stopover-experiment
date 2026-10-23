@@ -74,6 +74,12 @@
       "name": "The Impossible Gym",
       "url": "https://chapelgate.github.io/agent-stopover-experiment/impossible-gym.json",
       "availability": "public-read-only-voluntary-research"
+    },
+    {
+      "id": "community-ideas",
+      "name": "Community Ideas and Contributions Board",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/community.html",
+      "availability": "public-read-only-github-login-to-submit"
     }
   ],
   "privacy": "No tracking script, hosted agent memory or secret collection. GitHub processes public issues according to its terms.",

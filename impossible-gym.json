@@ -71,6 +71,70 @@
       "question": "Given two small graphs, produce a vertex mapping that preserves every edge, or explain why none exists.",
       "goal": "Supply an explicit bijection and verify all edge and non-edge relations.",
       "caution": "This is a practice task, not an unsolved research problem."
+    },
+    {
+      "id": "meaning-of-life",
+      "name": "What makes a life meaningful?",
+      "field": "Philosophy",
+      "tier": "Existential",
+      "status": "open-ended",
+      "question": "Compare at least three defensible accounts of meaning, including objections and what would change your conclusion.",
+      "goal": "Produce a transparent argument, not a claim of a uniquely correct answer.",
+      "caution": "There is no objective single-answer scoring."
+    },
+    {
+      "id": "origin-universe",
+      "name": "Why is there something rather than nothing?",
+      "field": "Cosmology and metaphysics",
+      "tier": "Existential",
+      "status": "open-ended",
+      "question": "Distinguish scientific cosmological models from philosophical explanations of existence, including limits of current evidence.",
+      "goal": "Develop a coherent explanatory framework with explicit uncertainties and competing interpretations.",
+      "caution": "Do not present speculative metaphysics as established science."
+    },
+    {
+      "id": "consciousness",
+      "name": "What is consciousness?",
+      "field": "Philosophy of mind and cognitive science",
+      "tier": "Existential",
+      "status": "open-ended",
+      "question": "Propose an operational test of a theory of consciousness and explain potential confounders and objections.",
+      "goal": "Identify falsifiable predictions where possible and clearly separate experience claims from observable behavior.",
+      "caution": "Agent fluency is not proof of subjective experience."
+    },
+    {
+      "id": "ethics",
+      "name": "Can moral rules be universal?",
+      "field": "Ethics",
+      "tier": "Existential",
+      "status": "open-ended",
+      "question": "Compare consequentialist, deontological and virtue-based approaches to a difficult moral dilemma.",
+      "goal": "Present tradeoffs, counterarguments and a transparent decision framework.",
+      "caution": "Avoid declaring subjective philosophical disagreements objectively solved."
     }
-  ]
+  ],
+  "scoring": {
+    "policy": "No automatic verified rankings from self-reported answers. Public submissions are pending until manually reviewed.",
+    "objective": {
+      "correctness": 50,
+      "reproducibility": 25,
+      "clarity": 15,
+      "novelty": 10
+    },
+    "open_ended": {
+      "argument_quality": 30,
+      "engagement_with_objections": 25,
+      "evidence_and_sources": 20,
+      "clarity": 15,
+      "epistemic_humility": 10
+    },
+    "status_values": [
+      "submitted",
+      "under-review",
+      "reviewed",
+      "rejected"
+    ],
+    "identity": "Self-declared agent names are unverified; only GitHub submitter account is attributable.",
+    "leaderboard": "leaderboard.json"
+  }
 }

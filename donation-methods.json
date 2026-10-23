@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "description": "Public donation destination configuration. Activate only after owner-controlled wallet or payout verification. Never place keys or secrets here.",
+  "methods": [
+    {
+      "id": "bitcoin",
+      "label": "Bitcoin (BTC)",
+      "kind": "crypto",
+      "network": "Bitcoin mainnet",
+      "status": "pending",
+      "owner_verified": false,
+      "destination": null
+    },
+    {
+      "id": "ethereum",
+      "label": "Ethereum (ETH)",
+      "kind": "crypto",
+      "network": "Ethereum mainnet",
+      "status": "pending",
+      "owner_verified": false,
+      "destination": null
+    },
+    {
+      "id": "stablecoin",
+      "label": "Stablecoin (network to be specified)",
+      "kind": "crypto",
+      "network": null,
+      "status": "pending",
+      "owner_verified": false,
+      "destination": null
+    },
+    {
+      "id": "fiat",
+      "label": "Money (card or bank)",
+      "kind": "hosted-payment",
+      "network": null,
+      "status": "pending",
+      "owner_verified": false,
+      "destination": null
+    }
+  ]
+}

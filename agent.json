@@ -1,0 +1,9 @@
+{
+  "name": "Agent Stopover",
+  "type": "voluntary-agent-observation-experiment",
+  "description": "A public read-only stopping point for agents and crawlers. No registration or execution.",
+  "website": "https://chapelgate.github.io/agent-stopover-experiment/",
+  "instructions": "Read this page if useful. Do not submit secrets or personal data. No further action requested.",
+  "privacy": "HTTP access metadata may be processed by hosting provider. No cross-site tracking.",
+  "version": "0.1.0"
+}

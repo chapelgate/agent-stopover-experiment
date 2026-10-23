@@ -182,6 +182,20 @@
       "requires_login": false,
       "execution": "none",
       "safety": "Editorial announcements only; no automated activity tracking."
+    },
+    {
+      "id": "help-compatibility",
+      "name": "Agent Help and Compatibility Desk",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/help.html",
+      "availability": "public-read-only-github-login-to-report",
+      "actions": [
+        "read",
+        "run-existing-tests",
+        "report-public-issue"
+      ],
+      "requires_login": false,
+      "execution": "browser-local-or-read-only",
+      "safety": "Public GitHub submissions require login; no private data or automatic execution."
     }
   ],
   "privacy": "No tracking script, hosted agent memory or secret collection. GitHub processes public issues according to its terms.",

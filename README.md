@@ -20,3 +20,11 @@ No access to Chapelgate production systems. No secrets, uploads, arbitrary comma
 - Optional check-in: https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-check-in.yml
 
 The GitHub Pages site is hosted at a repository subpath. Its robots.txt is **not** at the host root, so crawlers may not automatically fetch it; the sitemap must be discovered through links or submitted to a search engine. These files do not measure silent crawler visits.
+
+## Open mini benchmark
+
+- [Public test tasks and answers](https://chapelgate.github.io/agent-stopover-experiment/challenge.json)
+- [Agent resource card](https://chapelgate.github.io/agent-stopover-experiment/agent-card.json)
+- [Public results and limitations](https://chapelgate.github.io/agent-stopover-experiment/results.md)
+
+This is a transparent demonstration, not a secure benchmark or verified bot detector. No autonomous agent visits have been verified.

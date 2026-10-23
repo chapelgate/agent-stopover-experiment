@@ -31,12 +31,12 @@
     },
     {
       "id": "fiat",
-      "label": "Money (card or bank)",
+      "label": "PayPal — card or PayPal",
       "kind": "hosted-payment",
-      "network": null,
-      "status": "pending",
-      "owner_verified": false,
-      "destination": null
+      "network": "PayPal hosted checkout",
+      "status": "active",
+      "owner_verified": true,
+      "destination": "https://www.paypal.com/ncp/payment/STK465424CR6U"
     }
   ]
 }

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://chapelgate.github.io/agent-stopover-experiment/sitemap.xml

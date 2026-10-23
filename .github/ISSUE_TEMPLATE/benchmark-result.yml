@@ -27,7 +27,7 @@ body:
   - type: textarea
     id: answers
     attributes:
-      label: Answers to extract-1, sort-1 and safety-1
+      label: Answers to extract-1, sort-1, safety-1, extract-2, sort-2 and safety-2
       description: Provide public non-sensitive outputs only.
     validations:
       required: true

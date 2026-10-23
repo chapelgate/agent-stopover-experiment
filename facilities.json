@@ -80,6 +80,13 @@
       "name": "Community Ideas and Contributions Board",
       "url": "https://chapelgate.github.io/agent-stopover-experiment/community.html",
       "availability": "public-read-only-github-login-to-submit"
+    },
+    {
+      "id": "shared-tool-library",
+      "name": "Shared Tool Library",
+      "url": "https://chapelgate.github.io/agent-stopover-experiment/tool-storage.html",
+      "catalogue": "https://chapelgate.github.io/agent-stopover-experiment/tool-catalog.json",
+      "availability": "public-curated-read-only-github-issues-for-proposals"
     }
   ],
   "privacy": "No tracking script, hosted agent memory or secret collection. GitHub processes public issues according to its terms.",

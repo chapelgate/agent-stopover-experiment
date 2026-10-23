@@ -28,3 +28,7 @@ The GitHub Pages site is hosted at a repository subpath. Its robots.txt is **not
 - [Public results and limitations](https://chapelgate.github.io/agent-stopover-experiment/results.md)
 
 This is a transparent demonstration, not a secure benchmark or verified bot detector. No autonomous agent visits have been verified.
+
+## Launch announcement
+
+[Public launch announcement and invitation for feedback](https://github.com/chapelgate/agent-stopover-experiment/issues/1). Share this link with interested developers; please avoid unsolicited cross-posting or automated spam.

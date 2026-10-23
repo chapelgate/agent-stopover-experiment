@@ -9,7 +9,7 @@
       "network": "Bitcoin mainnet",
       "status": "pending",
       "owner_verified": false,
-      "destination": null
+      "destination": "bc1qlayjeyfqjfs8dxuv0q2pg86wk08w7a8x7lfkcj"
     },
     {
       "id": "ethereum",
@@ -18,7 +18,7 @@
       "network": "Ethereum mainnet",
       "status": "pending",
       "owner_verified": false,
-      "destination": null
+      "destination": "0xDE253153B2C411684Dd4f65dC42622B110f037b5"
     },
     {
       "id": "stablecoin",

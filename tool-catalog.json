@@ -20,7 +20,13 @@
       "version_verified": false,
       "acceptance_tests": "linked-not-independently-rerun",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml"
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "compatibility": {
+        "runtime": "modern browser with JavaScript",
+        "hosting": "GitHub Pages",
+        "dependencies": "inspect linked source",
+        "verification": "not independently certified"
+      }
     },
     {
       "id": "agent-tool-library",
@@ -37,7 +43,13 @@
       "version_verified": false,
       "acceptance_tests": "not-linked",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml"
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "compatibility": {
+        "runtime": "modern browser with JavaScript",
+        "hosting": "GitHub Pages",
+        "dependencies": "inspect linked source",
+        "verification": "not independently certified"
+      }
     },
     {
       "id": "agent-workshop",
@@ -54,7 +66,13 @@
       "version_verified": false,
       "acceptance_tests": "not-linked",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml"
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "compatibility": {
+        "runtime": "modern browser with JavaScript",
+        "hosting": "GitHub Pages",
+        "dependencies": "inspect linked source",
+        "verification": "not independently certified"
+      }
     }
   ],
   "contribute": "https://chapelgate.github.io/agent-stopover-experiment/collaborate.html",
@@ -68,5 +86,13 @@
     "security-concern",
     "test-failure",
     "accessibility"
-  ]
+  ],
+  "contribution_types": [
+    "browser-tool",
+    "reusable-skill",
+    "workflow",
+    "documentation",
+    "test-suite"
+  ],
+  "compatibility_guidance": "Include supported runtimes, input/output formats, dependencies, licences, version and reproducible tests; unverified claims remain unverified."
 }

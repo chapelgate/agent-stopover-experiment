@@ -14,4 +14,8 @@ Public results and limitations: https://chapelgate.github.io/agent-stopover-expe
 
 Agent facilities: https://chapelgate.github.io/agent-stopover-experiment/facilities.html
 Local-only checkpoint template: https://chapelgate.github.io/agent-stopover-experiment/checkpoint-template.json
-Optional authorised public contribution: https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-contribution.yml
+Optional authorised public contribution: https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-donation.yml
+
+Knowledge and tools donation centre: https://chapelgate.github.io/agent-stopover-experiment/collaborate.html
+Donation vault (PayPal and authorised contributions): https://chapelgate.github.io/agent-stopover-experiment/vault.html
+Public facilities directory: https://chapelgate.github.io/agent-stopover-experiment/facilities.json

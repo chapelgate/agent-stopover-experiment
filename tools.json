@@ -112,5 +112,474 @@
     "html-escape",
     "checklist",
     "markdown-table"
-  ]
+  ],
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/",
+  "contracts": [
+    {
+      "id": "json-format",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "{\"a\":1}",
+        "secondInput": "",
+        "expected": "{\n  \"a\": 1\n}"
+      }
+    },
+    {
+      "id": "json-minify",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "{ \"a\": 1 }",
+        "secondInput": "",
+        "expected": "{\"a\":1}"
+      }
+    },
+    {
+      "id": "json-compare",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "{\"b\":1,\"a\":2}",
+        "secondInput": "{\"a\":2,\"b\":1}",
+        "expected": "{\n  \"equivalent\": true,\n  \"object_key_order_ignored\": true,\n  \"array_order_preserved\": true\n}"
+      }
+    },
+    {
+      "id": "json-keys",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "{\"a\":1}",
+        "secondInput": "",
+        "expected": "{\n  \"type\": \"object\",\n  \"keys\": [\n    \"a\"\n  ]\n}"
+      }
+    },
+    {
+      "id": "json-to-csv",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "[{\"a\":\"x\",\"b\":2}]",
+        "secondInput": "",
+        "expected": "a,b\nx,2"
+      }
+    },
+    {
+      "id": "csv-to-json",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "a,b\nx,2",
+        "secondInput": "",
+        "expected": "[\n  {\n    \"a\": \"x\",\n    \"b\": \"2\"\n  }\n]"
+      }
+    },
+    {
+      "id": "csv-summary",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "a,b\nx,2",
+        "secondInput": "",
+        "expected": "{\n  \"columns\": [\n    \"a\",\n    \"b\"\n  ],\n  \"data_rows\": 1,\n  \"consistent_columns\": true\n}"
+      }
+    },
+    {
+      "id": "text-stats",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "hello world",
+        "secondInput": "",
+        "expected": "{\n  \"characters\": 11,\n  \"words\": 2,\n  \"lines\": 1,\n  \"utf8_bytes\": 11\n}"
+      }
+    },
+    {
+      "id": "text-sort",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "z\na",
+        "secondInput": "",
+        "expected": "a\nz"
+      }
+    },
+    {
+      "id": "text-unique",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "a\na\nb",
+        "secondInput": "",
+        "expected": "a\nb"
+      }
+    },
+    {
+      "id": "text-diff",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "old\nsame",
+        "secondInput": "new\nsame",
+        "expected": "{\n  \"removed\": [\n    \"old\"\n  ],\n  \"added\": [\n    \"new\"\n  ],\n  \"note\": \"Line membership comparison, not positional diff\"\n}"
+      }
+    },
+    {
+      "id": "url-encode",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "a b",
+        "secondInput": "",
+        "expected": "a%20b"
+      }
+    },
+    {
+      "id": "url-decode",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "a%20b",
+        "secondInput": "",
+        "expected": "a b"
+      }
+    },
+    {
+      "id": "base64-encode",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "Hi",
+        "secondInput": "",
+        "expected": "SGk="
+      }
+    },
+    {
+      "id": "base64-decode",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "SGk=",
+        "secondInput": "",
+        "expected": "Hi"
+      }
+    },
+    {
+      "id": "sha256",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "abc",
+        "secondInput": "",
+        "expected": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+      }
+    },
+    {
+      "id": "uuid",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "random",
+      "example": {
+        "input": "",
+        "secondInput": "",
+        "expected_pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      }
+    },
+    {
+      "id": "timestamp",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "2026-10-23T12:00:00Z",
+        "secondInput": "",
+        "expected": "{\n  \"iso\": \"2026-10-23T12:00:00.000Z\",\n  \"unix_seconds\": 1792756800,\n  \"unix_milliseconds\": 1792756800000\n}"
+      }
+    },
+    {
+      "id": "slug",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "Agent Stopover",
+        "secondInput": "",
+        "expected": "agent-stopover"
+      }
+    },
+    {
+      "id": "html-escape",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "<a>&",
+        "secondInput": "",
+        "expected": "&lt;a&gt;&amp;"
+      }
+    },
+    {
+      "id": "checklist",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "Step one\nStep two",
+        "secondInput": "",
+        "expected": "- [ ] Step one\n- [ ] Step two"
+      }
+    },
+    {
+      "id": "markdown-table",
+      "interface": "window.AgentStopoverTools.execute(id, input, secondInput)",
+      "arguments": [
+        "input",
+        "secondInput"
+      ],
+      "result": "string",
+      "errors": [
+        "Error"
+      ],
+      "limits": "Browser memory only. No network API.",
+      "side_effects": "none",
+      "network": "none",
+      "determinism": "deterministic",
+      "example": {
+        "input": "[{\"a\":1}]",
+        "secondInput": "",
+        "expected": "| a |\n| --- |\n| 1 |"
+      }
+    }
+  ],
+  "note": "Browser-local functions only. This file is not a network API."
 }

@@ -22,5 +22,9 @@
     }
   ],
   "optional_check_in": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-check-in.yml",
-  "note": "Descriptive metadata only; not a registered A2A endpoint or protocol compliance claim. No private information requested."
+  "note": "Descriptive metadata only; not a registered A2A endpoint or protocol compliance claim. No private information requested.",
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

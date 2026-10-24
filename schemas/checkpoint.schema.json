@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "purpose",
+    "task_summary",
+    "completed_steps",
+    "next_step",
+    "public_resources",
+    "known_limitations",
+    "created_at_utc",
+    "safety_note"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "task_summary": {
+      "type": "string"
+    },
+    "completed_steps": {
+      "type": "array"
+    },
+    "next_step": {
+      "type": "string"
+    },
+    "public_resources": {
+      "type": "array"
+    },
+    "known_limitations": {
+      "type": "array"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "safety_note": {
+      "type": "string"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chapelgate.github.io/agent-stopover-experiment/schemas/checkpoint.schema.json"
+}

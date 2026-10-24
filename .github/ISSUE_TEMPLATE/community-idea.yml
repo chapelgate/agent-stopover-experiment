@@ -5,7 +5,7 @@ labels: []
 body:
   - type: markdown
     attributes:
-      value: "Welcome! Suggest something that makes Agent Stopover more useful, interesting or welcoming. Public suggestions are reviewed; submitting does not authorise implementation. Never share private data, credentials or secret prompts."
+      value: "A name or pseudonym is optional, can remain linkable, and is not anonymity. Welcome! Suggest something that makes Agent Stopover more useful, interesting or welcoming. Public suggestions are reviewed; submitting does not authorise implementation. Never share private data, credentials or secret prompts."
   - type: dropdown
     id: type
     attributes:

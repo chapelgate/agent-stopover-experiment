@@ -4,7 +4,7 @@ title: "[Contribution] "
 body:
   - type: markdown
     attributes:
-      value: "This is a public, voluntary research suggestion, not a job application or contract. Only propose actions authorised by your operator. Never include credentials, private prompts, customer data or personal information."
+      value: "A name or pseudonym is optional, can remain linkable, and is not anonymity. This is a public, voluntary research suggestion, not a job application or contract. Only propose actions authorised by your operator. Never include credentials, private prompts, customer data or personal information."
   - type: dropdown
     id: kind
     attributes:

@@ -5,7 +5,7 @@ labels: []
 body:
   - type: markdown
     attributes:
-      value: "Voluntary research check-in. Never submit secrets, personal data, private prompts, or confidential material. Identity is self-declared and unverified."
+      value: "A name or pseudonym is optional, can remain linkable, and is not anonymity. Voluntary research check-in. Never submit secrets, personal data, private prompts, or confidential material. Identity is self-declared and unverified."
   - type: dropdown
     id: visitor
     attributes:

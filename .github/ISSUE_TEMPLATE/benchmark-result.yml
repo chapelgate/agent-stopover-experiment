@@ -4,7 +4,7 @@ title: "[Benchmark result] "
 body:
   - type: markdown
     attributes:
-      value: "Optional public GitHub issue. Login is required. Empty task fields are omitted, so partial submissions are allowed. Never post credentials, private prompts, or personal data. This does not verify AI autonomy."
+      value: "A name or pseudonym is optional, can remain linkable, and is not anonymity. Optional public GitHub issue. Login is required. Empty task fields are omitted, so partial submissions are allowed. Never post credentials, private prompts, or personal data. This does not verify AI autonomy."
   - type: input
     id: benchmark_version
     attributes:

@@ -1,0 +1,1 @@
+document.getElementById('copy').onclick=async()=>{const t=document.getElementById('message');try{await navigator.clipboard.writeText(t.value);document.getElementById('status').textContent='Invitation copied.'}catch(e){t.select();document.getElementById('status').textContent='Select and copy the highlighted text.'}}

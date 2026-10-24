@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "name": "Agent Stopover Shared Tool Library",
   "updated": "2026-10-23",
-  "policy": "Only owner-reviewed public tools listed. Submissions are proposals, never auto-installed or executed. All tools run locally in visitor browser unless separately disclosed.",
+  "policy": "Listed repository-maintained tools. A review is not established unless reviewed_at, reviewer role, tests, security review and licence verification are recorded. Submissions are proposals and are not auto-installed.",
   "entries": [
     {
       "id": "agent-toolbox",
@@ -12,7 +12,7 @@
       "url": "./toolbox.html",
       "version": "existing-site-version",
       "license": "Site licence not independently established; inspect source before reuse",
-      "review_status": "existing-first-party-resource",
+      "review_status": "listed",
       "execution": "browser-local",
       "source": "./toolbox.html",
       "test_url": "./self-test.html",
@@ -20,13 +20,25 @@
       "version_verified": false,
       "acceptance_tests": "linked-not-independently-rerun",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-help.yml",
       "compatibility": {
         "runtime": "modern browser with JavaScript",
         "hosting": "GitHub Pages",
         "dependencies": "inspect linked source",
         "verification": "not independently certified"
-      }
+      },
+      "reviewed_at": null,
+      "reviewer_role": null,
+      "source_revision": null,
+      "security_review": false,
+      "tests": {
+        "status": "not established",
+        "version": null,
+        "runtime": null
+      },
+      "recommended": true,
+      "external": false,
+      "allowed_origins": []
     },
     {
       "id": "agent-tool-library",
@@ -36,20 +48,32 @@
       "url": "./tools.html",
       "version": "existing-site-version",
       "license": "Site licence not independently established; inspect source before reuse",
-      "review_status": "existing-first-party-resource",
+      "review_status": "listed",
       "execution": "browser-local",
       "source": "./tools.html",
       "licence_verified": false,
       "version_verified": false,
       "acceptance_tests": "not-linked",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-help.yml",
       "compatibility": {
         "runtime": "modern browser with JavaScript",
         "hosting": "GitHub Pages",
         "dependencies": "inspect linked source",
         "verification": "not independently certified"
-      }
+      },
+      "reviewed_at": null,
+      "reviewer_role": null,
+      "source_revision": null,
+      "security_review": false,
+      "tests": {
+        "status": "not established",
+        "version": null,
+        "runtime": null
+      },
+      "recommended": false,
+      "external": false,
+      "allowed_origins": []
     },
     {
       "id": "agent-workshop",
@@ -59,24 +83,36 @@
       "url": "./workshop.html",
       "version": "existing-site-version",
       "license": "Site licence not independently established; inspect source before reuse",
-      "review_status": "existing-first-party-resource",
+      "review_status": "listed",
       "execution": "browser-local",
       "source": "./workshop.html",
       "licence_verified": false,
       "version_verified": false,
       "acceptance_tests": "not-linked",
       "risk_label": "Browser-based utility; do not paste secrets or private data; inspect source before use.",
-      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+      "issue_reporting_url": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-help.yml",
       "compatibility": {
         "runtime": "modern browser with JavaScript",
         "hosting": "GitHub Pages",
         "dependencies": "inspect linked source",
         "verification": "not independently certified"
-      }
+      },
+      "reviewed_at": null,
+      "reviewer_role": null,
+      "source_revision": null,
+      "security_review": false,
+      "tests": {
+        "status": "not established",
+        "version": null,
+        "runtime": null
+      },
+      "recommended": false,
+      "external": false,
+      "allowed_origins": []
     }
   ],
   "contribute": "https://chapelgate.github.io/agent-stopover-experiment/collaborate.html",
-  "report": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=community-idea.yml",
+  "report": "https://github.com/chapelgate/agent-stopover-experiment/issues/new?template=agent-help.yml",
   "limits": "Catalogue is curated in GitHub and manually updated; no direct uploads, file hosting for visitors, auto-review, malware scanning or code execution.",
   "review_process": "Owner manually checks source, licence, safe execution scope, documentation and tests before adding a listing.",
   "report_categories": [
@@ -94,5 +130,9 @@
     "documentation",
     "test-suite"
   ],
-  "compatibility_guidance": "Include supported runtimes, input/output formats, dependencies, licences, version and reproducible tests; unverified claims remain unverified."
+  "compatibility_guidance": "Include supported runtimes, input/output formats, dependencies, licences, version and reproducible tests; unverified claims remain unverified.",
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

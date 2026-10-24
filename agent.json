@@ -22,5 +22,6 @@
     "updates": "https://chapelgate.github.io/agent-stopover-experiment/updates.json",
     "sitemap": "https://chapelgate.github.io/agent-stopover-experiment/sitemap.xml",
     "llms": "https://chapelgate.github.io/agent-stopover-experiment/llms.txt"
-  }
+  },
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

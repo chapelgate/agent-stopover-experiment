@@ -6,5 +6,10 @@
   "rankings": [],
   "submissions_count": 0,
   "reviewed_count": 0,
-  "notes": "Empty by design: no genuine submissions have been independently reviewed. GitHub Issues are the public submission record."
+  "notes": "Unreviewed as of document update 2026-10-24. reviewed_at and last_reviewed are null. Zero counts are not a completed evidence review.",
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/",
+  "scope": "impossible-gym submissions only"
 }

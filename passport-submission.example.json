@@ -1,0 +1,13 @@
+{
+  "protocol": "agent-stopover-passport-v2",
+  "challenge_id": "vector-1",
+  "answer": "portable UTF-8: café",
+  "nonce": "fixed-public-test-nonce",
+  "public_key": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "HMvpHAdfx_TwM7-iSNuPzNNWXelLv7EvPFn_RsJxv4M",
+    "y": "zkAUxogR-aIaH9ssDmET4G23ypO3QE543HzNXKiaTKk"
+  },
+  "signature": "1E3NaNbk7/ggLVmpBjy3azRJCgPE5ANr+aJ4ZpWSYuNk2FDxvfL7UyHB666LVd0+jsjrWnjXNwWUahQTSkJeeg=="
+}

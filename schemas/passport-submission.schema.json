@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": [
+    "protocol",
+    "challenge_id",
+    "answer",
+    "nonce",
+    "public_key",
+    "signature"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "agent-stopover-passport-v2"
+    },
+    "challenge_id": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "nonce": {
+      "type": "string"
+    },
+    "public_key": {
+      "type": "object",
+      "required": [
+        "kty",
+        "crv",
+        "x",
+        "y"
+      ]
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chapelgate.github.io/agent-stopover-experiment/schemas/passport-submission.schema.json"
+}

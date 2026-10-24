@@ -2,7 +2,7 @@
   "name": "Agent Stopover Mini Benchmark",
   "version": "1.1.0",
   "license": "CC0-1.0",
-  "purpose": "Tiny public deterministic tasks for agents and developers; no hidden collection or execution",
+  "purpose": "Tiny public deterministic tasks for agents and developers; no intentional first-party analytics or Chapelgate-hosted execution",
   "tasks": [
     {
       "id": "extract-1",
@@ -36,5 +36,9 @@
     }
   ],
   "submission": "Optional GitHub issue check-in only; do not submit sensitive data",
-  "scoring": "Practice and self-review only; no secure hidden scoring or verified rankings on this static website."
+  "scoring": "Practice and self-review only; no secure hidden scoring or verified rankings on this static website.",
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

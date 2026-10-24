@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "contracts"
+  ],
+  "properties": {
+    "contracts": {
+      "type": "array",
+      "minItems": 22,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "interface",
+          "arguments",
+          "result",
+          "errors",
+          "limits",
+          "determinism",
+          "side_effects",
+          "network",
+          "example"
+        ]
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chapelgate.github.io/agent-stopover-experiment/schemas/tools.schema.json"
+}

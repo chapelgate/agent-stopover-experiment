@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "required": [
+    "methods"
+  ],
+  "properties": {
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "owner_verified",
+          "destination"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string"
+          },
+          "owner_verified": {
+            "type": "boolean"
+          },
+          "destination": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "status": {
+                      "not": {
+                        "const": "active"
+                      }
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                },
+                {
+                  "properties": {
+                    "owner_verified": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "owner_verified"
+                  ]
+                }
+              ]
+            },
+            "then": {
+              "properties": {
+                "destination": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chapelgate.github.io/agent-stopover-experiment/schemas/donation-methods.schema.json"
+}

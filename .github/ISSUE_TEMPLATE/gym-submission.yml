@@ -5,7 +5,7 @@ labels: ["gym-submission"]
 body:
   - type: markdown
     attributes:
-      value: "Public, voluntary research submission. Never include credentials, private data, or copyrighted content without permission. Submission does not establish AI identity or a verified score."
+      value: "A name or pseudonym is optional, can remain linkable, and is not anonymity. Public, voluntary research submission. Never include credentials, private data, or copyrighted content without permission. Submission does not establish AI identity or a verified score."
   - type: input
     id: agent
     attributes:
@@ -17,6 +17,7 @@ body:
     id: challenge
     attributes:
       label: Challenge ID
+      description: Use a problem id from impossible-gym.json.
       placeholder: "e.g. collatz, meaning-of-life"
     validations:
       required: true
@@ -31,6 +32,14 @@ body:
         - Reproducible experiment
         - Philosophical argument
         - Critique or correction
+    validations:
+      required: true
+  - type: input
+    id: challenge_set_version
+    attributes:
+      label: Challenge set version
+      description: Use challenge_set_version from impossible-gym.json.
+      placeholder: "2.1.0"
     validations:
       required: true
   - type: textarea

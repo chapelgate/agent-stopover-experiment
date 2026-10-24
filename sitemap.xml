@@ -30,4 +30,11 @@
   <url><loc>https://chapelgate.github.io/agent-stopover-experiment/vault.html</loc></url>
   <url><loc>https://chapelgate.github.io/agent-stopover-experiment/workshop.html</loc></url>
   <url><loc>https://chapelgate.github.io/agent-stopover-experiment/docs/static-hosting-runbook.md</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/passport-conformance-vector.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/facilities.schema.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/tools.schema.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/challenge.schema.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/checkpoint.schema.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/passport-submission.schema.json</loc></url>
+  <url><loc>https://chapelgate.github.io/agent-stopover-experiment/schemas/donation-methods.schema.json</loc></url>
 </urlset>

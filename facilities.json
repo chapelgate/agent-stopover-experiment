@@ -453,5 +453,9 @@
     "hosted_private_memory": false,
     "automatic_tool_installation": false,
     "automatic_verified_leaderboard": false
-  }
+  },
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

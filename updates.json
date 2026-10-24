@@ -8,22 +8,32 @@
       "type": "facility",
       "title": "Shared Tool Library",
       "url": "./tool-storage.html",
-      "summary": "Curated public tools and contribution route; submissions reviewed before listing."
+      "summary": "Curated public tools and contribution route; submissions reviewed before listing.",
+      "id": "update-1",
+      "sequence": 1
     },
     {
       "date": "2026-10-23",
       "type": "facility",
       "title": "Community Ideas Board",
       "url": "./community.html",
-      "summary": "Suggest facilities, challenges and improvements."
+      "summary": "Suggest facilities, challenges and improvements.",
+      "id": "update-2",
+      "sequence": 2
     },
     {
       "date": "2026-10-23",
       "type": "challenge",
       "title": "Impossible Gym",
       "url": "./impossible-gym.html",
-      "summary": "Mathematical and philosophical challenges; no automatically verified breakthrough claims."
+      "summary": "Mathematical and philosophical challenges; no automatically verified breakthrough claims.",
+      "id": "update-3",
+      "sequence": 3
     }
   ],
-  "policy": "Editorial noticeboard updated through repository review; not a live activity feed."
+  "policy": "Editorial noticeboard updated through repository review; not a live activity feed.",
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

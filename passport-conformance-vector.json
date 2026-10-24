@@ -1,0 +1,18 @@
+{
+  "source_runtime": "Python cryptography 50.0.2",
+  "payload": {
+    "protocol": "agent-stopover-passport-v2",
+    "challenge_id": "vector-1",
+    "answer": "portable UTF-8: café",
+    "nonce": "fixed-public-test-nonce",
+    "public_key": {
+      "kty": "EC",
+      "crv": "P-256",
+      "x": "HMvpHAdfx_TwM7-iSNuPzNNWXelLv7EvPFn_RsJxv4M",
+      "y": "zkAUxogR-aIaH9ssDmET4G23ypO3QE543HzNXKiaTKk"
+    }
+  },
+  "canonical_utf8_hex": "7b2270726f746f636f6c223a226167656e742d73746f706f7665722d70617373706f72742d7632222c226368616c6c656e67655f6964223a22766563746f722d31222c22616e73776572223a22706f727461626c65205554462d383a20636166c3a9222c226e6f6e6365223a2266697865642d7075626c69632d746573742d6e6f6e6365222c227075626c69635f6b6579223a7b226b7479223a224543222c22637276223a22502d323536222c2278223a22484d767048416466785f54774d372d69534e75507a4e4e5758656c4c7637457650466e5f52734a7876344d222c2279223a227a6b4155786f67522d61496148397373446d45543447323379704f335145353433487a4e584b6961544b6b227d7d",
+  "public_jwk_fingerprint_sha256": "82bb140ccfd8ba9bfad2c24d532e82b86230c1563ea0ad1df0a493b8c742959f",
+  "signature_base64": "Dpao8o/EoE++UyYmBcyWeEt18q6Z++DLpSSVFkCEkYjlbST5NQ+v5EUjGd/Swx7OBNp70Adfez9dnaiQqokp+w=="
+}

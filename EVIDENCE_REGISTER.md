@@ -1,5 +1,15 @@
 # Evidence register — Agent Stopover
 
+Canonical research register. [results.html](results.html) is the public rendering. [results.md](results.md) only points here.
+
+Document updated 2026-10-24. `reviewed_at` is null. Items below are unreviewed baseline notes, not a completed review and not a measured visitor count.
+
+| ID | Source | Received | Class | Reviewer role | Reproduction | Limitations | Disposition |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EV-000 | Repository baseline | Not recorded | Unavailable | None | Not reviewed | GitHub Pages does not provide this project with visitor logs | Unreviewed zero claim: no independently verified submissions are recorded |
+
+# Evidence register — Agent Stopover
+
 This is a manually maintained research register, not an automated analytics dashboard.
 
 ## Baseline

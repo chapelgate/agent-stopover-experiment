@@ -1,15 +1,19 @@
 {
-    "schema_version":  1,
-    "description":  "Public verified active donation methods only. Never include private keys or unverified wallet addresses.",
-    "methods":  [
-                    {
-                        "id":  "fiat",
-                        "label":  "PayPal — card or PayPal",
-                        "kind":  "hosted-payment",
-                        "network":  "PayPal hosted checkout",
-                        "status":  "active",
-                        "owner_verified":  true,
-                        "destination":  "https://www.paypal.com/ncp/payment/STK465424CR6U"
-                    }
-                ]
+  "schema_version": 1,
+  "description": "Public verified active donation methods only. Never include private keys or unverified wallet addresses.",
+  "methods": [
+    {
+      "id": "fiat",
+      "label": "PayPal \u2014 card or PayPal",
+      "kind": "hosted-payment",
+      "network": "PayPal hosted checkout",
+      "status": "active",
+      "owner_verified": true,
+      "destination": "https://www.paypal.com/ncp/payment/STK465424CR6U"
+    }
+  ],
+  "document_version": "1.1.0",
+  "updated_at": "2026-10-24T00:40:00Z",
+  "reviewed_at": null,
+  "base_url": "https://chapelgate.github.io/agent-stopover-experiment/"
 }

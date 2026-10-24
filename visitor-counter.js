@@ -8,6 +8,9 @@ const ua=navigator.userAgent||"";
 const declared=new URLSearchParams(location.search).get("visitor")==="agent";
 const agent=declared||/\b(bot|crawler|spider|headless|playwright|puppeteer|selenium|lighthouse|gptbot|chatgpt|claudebot|googlebot|bingbot)\b/i.test(ua);
 const group=agent?"agent_browser":"regular_browser";
+const facility=(location.pathname.split("/").pop()||"index.html").replace(/[^a-z0-9.-]/gi,"_");
+const facilityKey=prefix+"facility_"+facility.replace(".html","")+"_"+group;
+try{const marker="stopover_facility_"+facilityKey;if(!sessionStorage.getItem(marker)){sessionStorage.setItem(marker,"1");fetch(base+"hit/"+facilityKey,{cache:"no-store"}).catch(()=>{});}}catch(e){}
 const key=prefix+group;
 const sessionKey="stopover_counted_"+group;
 const update=()=>{

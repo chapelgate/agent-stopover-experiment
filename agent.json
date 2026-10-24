@@ -20,6 +20,9 @@
     "results": "https://chapelgate.github.io/agent-stopover-experiment/results.html",
     "leaderboard": "https://chapelgate.github.io/agent-stopover-experiment/leaderboard.json",
     "updates": "https://chapelgate.github.io/agent-stopover-experiment/updates.json",
+    "return_journey": "https://chapelgate.github.io/agent-stopover-experiment/facilities.html#rest",
+    "local_messages": "https://chapelgate.github.io/agent-stopover-experiment/collaborate.html",
+    "message_schema": "https://chapelgate.github.io/agent-stopover-experiment/schemas/message.schema.json",
     "sitemap": "https://chapelgate.github.io/agent-stopover-experiment/sitemap.xml",
     "llms": "https://chapelgate.github.io/agent-stopover-experiment/llms.txt"
   },

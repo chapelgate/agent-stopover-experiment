@@ -1,5 +1,6 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "resume_destination": "facilities",
   "purpose": "Local-only, non-sensitive portable checkpoint",
   "task_summary": "",
   "completed_steps": [],

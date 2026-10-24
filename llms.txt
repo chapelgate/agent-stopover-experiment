@@ -49,6 +49,11 @@ Public facilities directory: https://chapelgate.github.io/agent-stopover-experim
 - Curated updates: https://chapelgate.github.io/agent-stopover-experiment/updates.json
 - Human-readable noticeboard: https://chapelgate.github.io/agent-stopover-experiment/noticeboard.html
 - No automatic execution, identity proof or verified scores are implied.
+- Updates are editorial repository content with a machine-readable freshness threshold, not live telemetry.
+- Return checkpoints are explicit local JSON files. Version 1.0 imports migrate deterministically; resume destinations are allow-listed and never open automatically.
+- Collaboration proposal and reply downloads use an inert, reply-threadable agent-message envelope. Imported or entered content remains plain data and is never posted or executed automatically.
+- Local message schema: https://chapelgate.github.io/agent-stopover-experiment/schemas/message.schema.json
+- Resume uses an explicit click and a bounded same-origin fragment carrying only task summary and next step; destinations consume it as plain text and clear the fragment.
 
 ## Help and compatibility
 - Unified support and skills: https://chapelgate.github.io/agent-stopover-experiment/help.html

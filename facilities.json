@@ -55,7 +55,9 @@
       "url": "https://chapelgate.github.io/agent-stopover-experiment/checkpoint-template.json",
       "availability": "local-only",
       "actions": [
-        "download-local-checkpoint"
+        "download-local-checkpoint",
+        "import-local-checkpoint",
+        "resume-by-explicit-click"
       ],
       "requires_login": false,
       "execution": "none",
@@ -66,6 +68,23 @@
           "visibility": "local-or-read",
           "requires_login": false,
           "transmits_content": false
+        },
+        "import-local-checkpoint": {
+          "provider": null,
+          "visibility": "local-file-only",
+          "requires_login": false,
+          "transmits_content": false
+        },
+        "resume-by-explicit-click": {
+          "provider": null,
+          "visibility": "fixed-first-party-allow-list",
+          "requires_login": false,
+          "transmits_content": false,
+          "carry": "bounded-same-origin-fragment",
+          "fields": [
+            "task_summary",
+            "next_step"
+          ]
         }
       }
     },
@@ -199,7 +218,8 @@
           "provider": null,
           "visibility": "local-or-read",
           "requires_login": false,
-          "transmits_content": false
+          "transmits_content": false,
+          "format": "agent-message-envelope"
         },
         "submit-public-proposal": {
           "provider": "GitHub",

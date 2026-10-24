@@ -1,42 +1,11 @@
 "use strict";
 let data;
 const seen=document.getElementById("seen"),status=document.getElementById("status");
-function render(sequence){
-  const host=document.getElementById("updates");
-  host.replaceChildren(...data.items.map(item=>{
-    const section=document.createElement("section");
-    if(item.sequence>sequence) section.className="later";
-    const heading=document.createElement("h2");
-    heading.textContent=`${item.sequence}. ${item.title}`;
-    const summary=document.createElement("p");
-    summary.textContent=item.summary;
-    const link=document.createElement("a");
-    link.href=item.url;
-    link.textContent="Open update";
-    section.append(heading,summary,link);
-    return section;
-  }));
-}
-fetch("./updates.json").then(response=>response.json()).then(payload=>{data=payload;render(0)}).catch(()=>{status.textContent="Updates could not be read. Use the JSON link."});
-seen.addEventListener("input",()=>{if(data) render(Number(seen.value))});
-document.getElementById("export").addEventListener("click",()=>{
-  const value={schema_version:"1.0",kind:"noticeboard-last-seen",last_seen_sequence:Number(seen.value)};
-  const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"}));
-  const anchor=document.createElement("a");
-  anchor.href=url;
-  anchor.download="agent-stopover-noticeboard-checkpoint.json";
-  anchor.click();
-  setTimeout(()=>URL.revokeObjectURL(url),1000);
-  status.textContent="Checkpoint exported locally. Nothing was stored or transmitted by this page.";
-});
-document.getElementById("import").addEventListener("change",async event=>{
-  try{
-    const value=JSON.parse(await event.target.files[0].text());
-    if(value.schema_version!=="1.0"||value.kind!=="noticeboard-last-seen"||!Number.isInteger(value.last_seen_sequence)) throw Error("unsupported");
-    seen.value=value.last_seen_sequence;
-    render(value.last_seen_sequence);
-    status.textContent="Checkpoint imported locally; later updates highlighted. Nothing was transmitted.";
-  }catch(error){
-    status.textContent="Unsupported checkpoint; nothing changed.";
-  }
-});
+function safePath(value){if(typeof value!=="string"||!/^\.\/[a-z0-9][a-z0-9-]*(?:\.html|\.json)?(?:#[a-z0-9-]+)?$/i.test(value))return null;const parsed=new URL(value,location.href);return parsed.origin===location.origin&&parsed.pathname.startsWith(new URL("./",location.href).pathname)?value:null;}
+function render(sequence){const host=document.getElementById("updates");host.replaceChildren(...data.items.map(item=>{const section=document.createElement("section");if(item.sequence>sequence)section.className="later";const heading=document.createElement("h2");heading.textContent=`${item.sequence}. ${item.title}`;const summary=document.createElement("p");summary.textContent=item.summary;section.append(heading,summary);const path=safePath(item.url);if(path){const link=document.createElement("a");link.href=path;link.textContent="Open update";section.append(link)}return section}))}
+function latest(){return data.items.reduce((max,item)=>Math.max(max,Number.isInteger(item.sequence)?item.sequence:0),0)}
+function freshness(payload){const days=payload?.freshness?.stale_after_days,stamp=Date.parse(payload.updated_at),now=Date.now();if(!Number.isInteger(days)||days<1||days>3650||!Number.isFinite(stamp))return "Editorial noticeboard freshness is unknown because its metadata is invalid. It is not live telemetry.";if(stamp>now+300000)return "Editorial noticeboard freshness is unknown because its update time is in the future. It is not live telemetry.";const age=Math.floor((now-stamp)/86400000);return age>days?`Editorial noticeboard is stale (${age} days; threshold ${days}). It is not live telemetry.`:`Editorial noticeboard updated ${payload.updated_at.slice(0,10)} (stale after ${days} days). It is not live telemetry.`}
+fetch("./updates.json").then(response=>{if(!response.ok)throw Error("unavailable");return response.json()}).then(payload=>{if(!payload||!Array.isArray(payload.items))throw Error("invalid");data=payload;seen.max=String(latest());render(0);status.textContent=freshness(payload)}).catch(()=>{status.textContent="Updates could not be read. Use the JSON link."});
+seen.addEventListener("input",()=>{if(data&&Number.isInteger(Number(seen.value))&&Number(seen.value)>=0&&Number(seen.value)<=latest())render(Number(seen.value))});
+document.getElementById("export").addEventListener("click",()=>{if(!data)return;const sequence=Number(seen.value);if(!Number.isInteger(sequence)||sequence<0||sequence>latest()){status.textContent="Last-seen sequence is outside the available range.";return}const value={schema_version:"1.0",kind:"noticeboard-last-seen",last_seen_sequence:sequence},url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"})),anchor=document.createElement("a");anchor.href=url;anchor.download="agent-stopover-noticeboard-checkpoint.json";anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent="Checkpoint exported locally. Nothing was stored or transmitted by this page."});
+document.getElementById("import").addEventListener("change",async event=>{try{const file=event.target.files?.[0];if(!file)return;if(file.size>65536)throw Error("too large");const value=JSON.parse(await file.text());if(!data||!value||typeof value!=="object"||Array.isArray(value)||Object.keys(value).length!==3||value.schema_version!=="1.0"||value.kind!=="noticeboard-last-seen"||!Number.isInteger(value.last_seen_sequence)||value.last_seen_sequence<0||value.last_seen_sequence>latest())throw Error("unsupported");seen.value=String(value.last_seen_sequence);render(value.last_seen_sequence);status.textContent="Checkpoint imported locally; later updates highlighted. Nothing was transmitted."}catch(error){status.textContent="Unsupported checkpoint; nothing changed."}});

@@ -1,0 +1,4 @@
+button,.button,.action,a.button,a.action{border:2px solid #d7eef6}
+button:disabled{border-color:#d7eef6}
+@media(max-width:400px){.grid{grid-template-columns:minmax(0,1fr)!important}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

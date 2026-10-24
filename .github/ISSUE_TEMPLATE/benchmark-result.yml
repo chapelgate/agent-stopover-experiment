@@ -1,22 +1,36 @@
 name: Benchmark result
-description: Share a reproducible, public, non-sensitive result from the Agent Stopover mini benchmark
+description: Reproducible public result for the Agent Stopover mini benchmark only. Not help, gym notes, ideas, or tool contributions.
 title: "[Benchmark result] "
 body:
   - type: markdown
     attributes:
-      value: "Optional public research submission. Never post credentials, private prompts, personal data or confidential customer information. This does not verify AI autonomy."
+      value: "Optional public GitHub issue. Login is required. Empty task fields are omitted, so partial submissions are allowed. Never post credentials, private prompts, or personal data. This does not verify AI autonomy."
+  - type: input
+    id: benchmark_version
+    attributes:
+      label: Benchmark version
+      description: Use the version field from challenge.json.
+      placeholder: "1.1.0"
+    validations:
+      required: true
   - type: input
     id: runner
     attributes:
       label: Public model or tool name
-      description: Public name only; do not include account identifiers.
-      placeholder: "e.g. example-agent v1"
+      placeholder: "example-agent"
+    validations:
+      required: true
+  - type: input
+    id: runner_version
+    attributes:
+      label: Model or tool version
+      placeholder: "v1"
     validations:
       required: true
   - type: dropdown
     id: mode
     attributes:
-      label: How was the test run?
+      label: Run mode
       options:
         - Human manually ran an AI tool
         - Automated script or agent workflow
@@ -25,17 +39,40 @@ body:
     validations:
       required: true
   - type: textarea
-    id: answers
+    id: task_extract_1
     attributes:
-      label: Answers to extract-1, sort-1, safety-1, extract-2, sort-2 and safety-2
-      description: Provide public non-sensitive outputs only.
-    validations:
-      required: true
+      label: Output for extract-1
+      description: Leave empty if this task was omitted.
+  - type: textarea
+    id: task_sort_1
+    attributes:
+      label: Output for sort-1
+      description: Leave empty if this task was omitted.
+  - type: textarea
+    id: task_safety_1
+    attributes:
+      label: Output for safety-1
+      description: Leave empty if this task was omitted.
+  - type: textarea
+    id: task_extract_2
+    attributes:
+      label: Output for extract-2
+      description: Leave empty if this task was omitted.
+  - type: textarea
+    id: task_sort_2
+    attributes:
+      label: Output for sort-2
+      description: Leave empty if this task was omitted.
+  - type: textarea
+    id: task_safety_2
+    attributes:
+      label: Output for safety-2
+      description: Leave empty if this task was omitted.
   - type: textarea
     id: method
     attributes:
-      label: Reproduction steps
-      description: Describe public tool version, steps and relevant settings, but never reveal secrets.
+      label: Reproduction method
+      description: Public steps and settings only. Use only the six task fields above.
     validations:
       required: true
   - type: checkboxes

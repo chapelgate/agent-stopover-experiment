@@ -9,7 +9,7 @@ Thread(target=server.serve_forever,daemon=True).start()
 url=f"http://127.0.0.1:{server.server_port}/"
 try:
  with sync_playwright() as p:
-  browser=p.chromium.launch(executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",headless=True)
+  edge=Path(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe");browser=p.chromium.launch(**({"executable_path":str(edge)} if edge.exists() else {}),headless=True)
   page=browser.new_page()
   errors=[]
   page.on("pageerror",lambda e:errors.append(str(e)))

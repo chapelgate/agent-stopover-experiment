@@ -11,7 +11,7 @@ Thread(target=server.serve_forever,daemon=True).start()
 fail=[]
 try:
  with sync_playwright() as p:
-  browser=p.chromium.launch(executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",headless=True)
+  edge=Path(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe");browser=p.chromium.launch(**({"executable_path":str(edge)} if edge.exists() else {}),headless=True)
   for file in sorted(root.glob("*.html")):
    page=browser.new_page()
    errs=[]

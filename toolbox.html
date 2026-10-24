@@ -66,4 +66,4 @@ $("run").addEventListener("click",async()=>{try{const value=await execute($("too
 $("clear").addEventListener("click",()=>{$("source").value="";$("second").value="";result="";$("output").textContent="Results will appear here.";$("result-status").textContent="Cleared. Nothing submitted.";$("copy").disabled=true;$("download").disabled=true});
 $("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(result);$("result-status").textContent="Copied locally."}catch(e){$("result-status").textContent="Copy unavailable. Select the result text instead."}});
 $("download").addEventListener("click",()=>{const url=URL.createObjectURL(new Blob([result],{type:"text/plain;charset=utf-8"}));const a=document.createElement("a");a.href=url;a.download="agent-toolbox-result.txt";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
-</script></body></html>
+</script><script src="./visitor-counter.js" defer></script></body></html>

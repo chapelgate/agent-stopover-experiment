@@ -1,42 +1,41 @@
 {
-  "schema_version": 1,
-  "description": "Public donation destination configuration. Activate only after owner-controlled wallet or payout verification. Never place keys or secrets here.",
-  "methods": [
-    {
-      "id": "bitcoin",
-      "label": "Bitcoin (BTC)",
-      "kind": "crypto",
-      "network": "Bitcoin mainnet",
-      "status": "pending",
-      "owner_verified": false,
-      "destination": "bc1qlayjeyfqjfs8dxuv0q2pg86wk08w7a8x7lfkcj"
-    },
-    {
-      "id": "ethereum",
-      "label": "Ethereum (ETH)",
-      "kind": "crypto",
-      "network": "Ethereum mainnet",
-      "status": "pending",
-      "owner_verified": false,
-      "destination": "0xDE253153B2C411684Dd4f65dC42622B110f037b5"
-    },
-    {
-      "id": "stablecoin",
-      "label": "Stablecoin (network to be specified)",
-      "kind": "crypto",
-      "network": null,
-      "status": "pending",
-      "owner_verified": false,
-      "destination": null
-    },
-    {
-      "id": "fiat",
-      "label": "PayPal ΓÇö card or PayPal",
-      "kind": "hosted-payment",
-      "network": "PayPal hosted checkout",
-      "status": "active",
-      "owner_verified": true,
-      "destination": "https://www.paypal.com/ncp/payment/STK465424CR6U"
-    }
-  ]
+    "schema_version":  1,
+    "description":  "Voluntary donation destinations. Bitcoin and Ethereum public receiving addresses are displayed; no private keys are stored. Stablecoin donations require a specified network and receiving address before they can be shown.",
+    "methods":  [
+                    {
+                        "id":  "bitcoin",
+                        "label":  "Bitcoin (BTC)",
+                        "kind":  "crypto",
+                        "network":  "Bitcoin mainnet",
+                        "status":  "active",
+                        "owner_verified":  false,
+                        "destination":  "bc1qlayjeyfqjfs8dxuv0q2pg86wk08w7a8x7lfkcj"
+                    },
+                    {
+                        "id":  "ethereum",
+                        "label":  "Ethereum (ETH)",
+                        "kind":  "crypto",
+                        "network":  "Ethereum mainnet",
+                        "status":  "active",
+                        "owner_verified":  false,
+                        "destination":  "0xDE253153B2C411684Dd4f65dC42622B110f037b5"
+                    },
+                    {
+                        "id":  "stablecoin",
+                        "label":  "Stablecoin donations (network and address not configured)",
+                        "kind":  "crypto",
+                        "network":  null,
+                        "owner_verified":  false,
+                        "destination":  null
+                    },
+                    {
+                        "id":  "fiat",
+                        "label":  "PayPal Î“Ã‡Ã¶ card or PayPal",
+                        "kind":  "hosted-payment",
+                        "network":  "PayPal hosted checkout",
+                        "status":  "active",
+                        "owner_verified":  true,
+                        "destination":  "https://www.paypal.com/ncp/payment/STK465424CR6U"
+                    }
+                ]
 }
